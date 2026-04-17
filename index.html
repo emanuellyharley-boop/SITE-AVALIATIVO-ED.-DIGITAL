@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olimpo Digital | Mitologia Grega</title>
+    <title>Crônicas do Olimpo | Histórias e Lendas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
     <header>
-        <nav aria-label="Navegação Principal">
-            <div class="logo">Olimpo<span>Digital</span></div>
-            <div class="controls">
-                <button id="btn-high-contrast" aria-label="Ativar alto contraste">🌓 Contraste</button>
-                <button id="btn-font-up" aria-label="Aumentar fonte">A+</button>
-                <button id="btn-font-down" aria-label="Diminuir fonte">A-</button>
+        <nav class="container nav-wrapper" aria-label="Navegação principal">
+            <div class="logo" aria-hidden="true">🏛️ <span>Olimpo</span>UX</div>
+            
+            <div class="accessibility-bar">
+                <button id="contrast-toggle" title="Alternar Alto Contraste" aria-label="Modo de alto contraste">🌓</button>
+                <button id="font-down" title="Diminuir texto" aria-label="Diminuir fonte">A-</button>
+                <button id="font-up" title="Aumentar texto" aria-label="Aumentar fonte">A+</button>
             </div>
         </nav>
     </header>
 
     <main id="main-content">
-        <section class="hero scroll-reveal" aria-labelledby="hero-title">
-            <h1 id="hero-title">Explore o Panteão Grego</h1>
-            <p>Deuses, heróis e monstros em uma experiência acessível e moderna.</p>
+        <section class="hero scroll-reveal">
+            <div class="container">
+                <h1>Mitos & Verdades</h1>
+                <p>Mergulhe nas histórias que definiram a cultura clássica.</p>
+            </div>
         </section>
 
-        <section id="gods-section" class="scroll-reveal" aria-labelledby="gods-title">
-            <h2 id="gods-title">Principais Divindades</h2>
-            <div id="gods-grid" class="grid-container">
+        <section class="container scroll-reveal" aria-labelledby="carousel-title">
+            <h2 id="carousel-title">Deuses em Destaque</h2>
+            <div class="carousel" role="region" aria-roledescription="carousel">
+                <div id="carousel-track" class="carousel-track">
+                    </div>
+                <div class="carousel-controls">
+                    <button id="prev" aria-label="Anterior">❮</button>
+                    <button id="next" aria-label="Próximo">❯</button>
                 </div>
+            </div>
         </section>
 
-        <section id="myths-section" class="scroll-reveal" aria-labelledby="myths-title">
-            <h2 id="myths-title">Mitos Famosos</h2>
-            <div id="accordion-container">
+        <section class="container scroll-reveal" aria-labelledby="stories-title">
+            <h2 id="stories-title">Epopeias Lendárias</h2>
+            <div id="accordion-group">
                 </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Olimpo Digital. Desenvolvido com foco em Acessibilidade.</p>
+    <footer class="container">
+        <p>&copy; 2026 Portal da Mitologia - Desenvolvido com foco em acessibilidade universal.</p>
     </footer>
 
     <script src="script.js"></script>
